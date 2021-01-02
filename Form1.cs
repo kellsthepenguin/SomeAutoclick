@@ -52,8 +52,8 @@ namespace SomeAutoclick {
             const uint LBUTTONDOWN = 0x0002;
             const uint LBUTTONUP = 0x0004;
 
-            mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
-            mouse_event(LBUTTONUP, 0, 0, 0, 0);
+            mouse_event(LBUTTONDOWN, Cursor.Position.X, Cursor.Position.Y, 0, 0);
+            mouse_event(LBUTTONUP, Cursor.Position.X, Cursor.Position.Y, 0, 0);
         }
 
         private void timer1_Tick(object sender, EventArgs e) {
